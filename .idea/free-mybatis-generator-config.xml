@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PersistentConfig">
+    <option name="historyConfigList">
+      <map>
+        <entry key="book">
+          <value>
+            <Config>
+              <option name="annotation" value="true" />
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="gen" />
+              <option name="daoName" value="BookDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="gen" />
+              <option name="modelName" value="Book" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="book" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="book" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="gen" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="other">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="gen" />
+              <option name="daoName" value="OtherDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="gen" />
+              <option name="modelName" value="Other" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="other" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="other" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="gen" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

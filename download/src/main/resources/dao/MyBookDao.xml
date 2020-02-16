@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.owwang.yunzhang.dao.MyBookDao">
+  <resultMap id="BaseResultMap" type="com.owwang.yunzhang.pojo.Book">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="bookName" jdbcType="VARCHAR" property="bookname" />
+    <result column="bookPage" jdbcType="INTEGER" property="bookpage" />
+    <result column="bookIntro" jdbcType="VARCHAR" property="bookintro" />
+    <result column="bookUrl" jdbcType="VARCHAR" property="bookurl" />
+    <result column="qianniuUrl" jdbcType="VARCHAR" property="qianniuurl" />
+    <result column="baiduyunUrl" jdbcType="VARCHAR" property="baiduyunurl" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, bookName, bookPage, bookIntro, bookUrl, qianniuUrl, baiduyunUrl
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from book
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from book
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.owwang.yunzhang.pojo.Book" useGeneratedKeys="true">
+    insert into book (bookName, bookPage, bookIntro, 
+      bookUrl, qianniuUrl, baiduyunUrl
+      )
+    values (#{bookname,jdbcType=VARCHAR}, #{bookpage,jdbcType=INTEGER}, #{bookintro,jdbcType=VARCHAR}, 
+      #{bookurl,jdbcType=VARCHAR}, #{qianniuurl,jdbcType=VARCHAR}, #{baiduyunurl,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.owwang.yunzhang.pojo.Book" useGeneratedKeys="true">
+    insert into book
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="bookname != null">
+        bookName,
+      </if>
+      <if test="bookpage != null">
+        bookPage,
+      </if>
+      <if test="bookintro != null">
+        bookIntro,
+      </if>
+      <if test="bookurl != null">
+        bookUrl,
+      </if>
+      <if test="qianniuurl != null">
+        qianniuUrl,
+      </if>
+      <if test="baiduyunurl != null">
+        baiduyunUrl,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="bookname != null">
+        #{bookname,jdbcType=VARCHAR},
+      </if>
+      <if test="bookpage != null">
+        #{bookpage,jdbcType=INTEGER},
+      </if>
+      <if test="bookintro != null">
+        #{bookintro,jdbcType=VARCHAR},
+      </if>
+      <if test="bookurl != null">
+        #{bookurl,jdbcType=VARCHAR},
+      </if>
+      <if test="qianniuurl != null">
+        #{qianniuurl,jdbcType=VARCHAR},
+      </if>
+      <if test="baiduyunurl != null">
+        #{baiduyunurl,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.owwang.yunzhang.pojo.Book">
+    update book
+    <set>
+      <if test="bookname != null">
+        bookName = #{bookname,jdbcType=VARCHAR},
+      </if>
+      <if test="bookpage != null">
+        bookPage = #{bookpage,jdbcType=INTEGER},
+      </if>
+      <if test="bookintro != null">
+        bookIntro = #{bookintro,jdbcType=VARCHAR},
+      </if>
+      <if test="bookurl != null">
+        bookUrl = #{bookurl,jdbcType=VARCHAR},
+      </if>
+      <if test="qianniuurl != null">
+        qianniuUrl = #{qianniuurl,jdbcType=VARCHAR},
+      </if>
+      <if test="baiduyunurl != null">
+        baiduyunUrl = #{baiduyunurl,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.owwang.yunzhang.pojo.Book">
+    update book
+    set bookName = #{bookname,jdbcType=VARCHAR},
+      bookPage = #{bookpage,jdbcType=INTEGER},
+      bookIntro = #{bookintro,jdbcType=VARCHAR},
+      bookUrl = #{bookurl,jdbcType=VARCHAR},
+      qianniuUrl = #{qianniuurl,jdbcType=VARCHAR},
+      baiduyunUrl = #{baiduyunurl,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
