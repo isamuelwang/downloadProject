@@ -34,6 +34,9 @@ public class DownloadController {
     @PostMapping(value = "/duxiu")
     @ResponseBody
     public QiNiuResult duxiu(@RequestBody Book book) {
+        if(book.getIsbn()!=null){
+            book.setIsbn(book.getIsbn().replace("=","").trim());
+        }
         //查询数据库，如果数据库存在数据，则返回数据库中信息即可
         Book resultBook = downloadService.duxiu(book);
         return new QiNiuResult(true, resultBook.getQiniuurl());
