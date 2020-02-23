@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b7f05e6-ecb1-4094-a337-9e63736812ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/组织行为学.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/走创新之路 东莞理工学院建设名牌地方院校理论与实践探索.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/download/src/main/java/com/owwang/yunzhang/controller/DownloadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/download/src/main/java/com/owwang/yunzhang/controller/DownloadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/download/src/main/java/com/owwang/yunzhang/service/DownloadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/download/src/main/java/com/owwang/yunzhang/service/DownloadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/download/src/main/resources/templates/t2.html" beforeDir="false" afterPath="$PROJECT_DIR$/download/src/main/resources/templates/t2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/download/target/classes/templates/t2.html" beforeDir="false" afterPath="$PROJECT_DIR$/download/target/classes/templates/t2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +103,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/download/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spider-master/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -208,6 +201,7 @@
       <workItem from="1581918317906" duration="7809000" />
       <workItem from="1582096044651" duration="1664000" />
       <workItem from="1582170276098" duration="218000" />
+      <workItem from="1582334003407" duration="5460000" />
     </task>
     <servers />
   </component>
@@ -234,6 +228,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="513" y="432" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581789500372" />
+    <state x="690" y="218" key="FileChooserDialogImpl" timestamp="1582339506033">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="218" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582339506033" />
     <state width="1867" height="269" key="GridCell.Tab.0.bottom" timestamp="1581930609467">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
